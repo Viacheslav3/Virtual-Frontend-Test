@@ -1,0 +1,169 @@
+// Here goes your CSS
+@import 'layout/main';
+
+$dark-color: rgb(0, 0, 0);
+
+.modal-window {
+	position: absolute;
+	top: 0;
+	right: 0px;
+	bottom: 0;
+	left: 0;
+	z-index: 999;
+	visibility: hidden;
+	opacity: 0;
+	pointer-events: none;
+	transition: all 0.3s;
+	&:target {
+		visibility: visible;
+		opacity: 1;
+		pointer-events: auto;
+	}
+	&>div {
+		width: 250px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		padding: 2em;
+		background: #ffffff;
+	}
+	header {
+		font-weight: bold;
+	}
+	h1 {
+		font-size: 150%;
+		margin: 0 0 15px;
+	}
+}
+.modal-close {
+	color: $dark-color;
+	line-height: 60px;
+	font-size: 80%;
+	position: absolute;
+	right: -29px;
+	text-align: center;
+	top: -17px;
+	width: 70px;
+	text-decoration: none;
+}
+.a{
+	text-decoration: none;
+}
+/* Demo Styles */
+body {
+	font: 600 18px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	background-image: linear-gradient(to right,#7f53ac 0,#657ced 100%);
+	color: $dark-color;
+}
+a {
+	color: inherit;
+}
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 10vh;
+}
+.modal-window div:not(:last-of-type) {
+	margin-bottom: 15px;
+}
+small {
+	color: #aaa;
+}
+.btn {
+	padding: 1em 1.5em;
+	border-radius: 3px;
+	text-decoration: none;
+	i {
+		padding-right: 0.3em;
+	}
+}
+.font-style{
+	font-family: 'Lobster', cursive;
+}
+.button{
+	text-transform: uppercase;
+	color:white;
+	background:$dark-color;
+	border: rgb(223, 214, 214);
+	height: auto;
+	width: auto;
+	width: 100%;
+	height: 40px;
+}
+.button:hover{
+	background-color: lightsalmon;
+	;
+}
+.form{
+	display: flex;
+	flex-flow: row wrap;
+}
+.checkbox {
+	white-space: nowrap;
+	font-size: 17px;
+	align-items: flex-start;
+}
+.checkbox label:before {
+	border-radius: 3px;
+}
+input[type=checkbox]:checked{
+	content: "\2713";
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+	font-size: 15px;
+	color: #f3f3f3;
+	text-align: center;
+	line-height: 15px;
+}
+.email-form{
+	border-style: solid;
+	height: auto;
+	width: 250px;
+}
+input {
+	outline: none;
+	padding-left: 1px;
+	border: none;
+}
+.input1 {
+	font-size: 15px;
+}
+.pswd-form{
+	border-style: solid;
+	height: auto;
+	width: 250px;
+}
+input.input1 {
+	height: 50px;
+	width: 100%;
+}
+.checkbox{
+	font-size: 15px;
+}
+.input {
+	font-size: 16px;
+}
+.input > input {
+	padding: 25px;
+	margin: 5px;
+	height: 15px;
+	width: 15px;
+	appearance: none;
+	border: 1px solid #34495E;
+	border-radius: 4px;
+	outline: none;
+	transition-duration: 0.3s;
+}
+.block-checkbox{
+	margin-left: -25px;
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+span{
+	top: -10px;
+	display: absolute;
+}
+.interior a{
+	text-decoration: none;
+}
