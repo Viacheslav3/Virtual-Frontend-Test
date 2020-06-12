@@ -1,4 +1,4 @@
 My project for Internship
 
-Start - npm install
+Start - npm install,
 Then - gulp
